@@ -1,0 +1,81 @@
+.drum-pad {
+  font-family: "Audiowide", sans-serif;
+  font-size: 4rem;
+  color: #333;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 7px;
+  background: radial-gradient(#318aff, #470099);
+  -webkit-box-shadow: 0 0 8px 4px #318aff88;
+          box-shadow: 0 0 8px 4px #318aff88;
+  -webkit-transition: -webkit-box-shadow 0.1s;
+  transition: -webkit-box-shadow 0.1s;
+  transition: box-shadow 0.1s;
+  transition: box-shadow 0.1s, -webkit-box-shadow 0.1s;
+}
+
+.drum-pad:active, .drum-pad.press {
+  color: #bbb;
+  background: radial-gradient(#86bbfe, #7805fb);
+  -webkit-box-shadow: 0 0 40px 4px #7805fb;
+          box-shadow: 0 0 40px 4px #7805fb;
+}
+
+#display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 500px;
+  margin: 0 auto 40px;
+  border-top: 2px solid #2a2a2a;
+  border-left: 2px solid #2a2a2a;
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+#display p {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  font-family: 'Audiowide', monospace;
+  font-size: 1rem;
+  color: #f3f3f3;
+  text-shadow: -10px -10px 40px #f3f3f3, 10px 10px 40px #f3f3f3;
+}
+
+#display p + p {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  text-align: left;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+  text-align: center;
+  background-color: #888;
+}
+
+#drum-machine {
+  padding: 40px 8px;
+  background-color: #262626;
+}
+/*# sourceMappingURL=App.css.map */

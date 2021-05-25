@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+public/sound/Chord 1.wav
+public/sound/Chord 2.wav
+public/sound/Chord 3.wav
+public/sound/Closed HH 909.wav
+public/sound/Kick 909.wav
+public/sound/OpenHH 909.wav
+public/sound/Rimshot.wav
+public/sound/Snare 909_1.wav
+public/sound/Snare 909_2.wav

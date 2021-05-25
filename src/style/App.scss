@@ -1,0 +1,20 @@
+@import 'drum-pad';
+@import 'display';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+  text-align: center;
+  background-color: #888;
+}
+
+#drum-machine {
+  padding: 40px 8px;
+  background-color: #262626;
+}
+
+
