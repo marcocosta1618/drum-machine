@@ -9,8 +9,8 @@
   border: 1px solid grey;
   border-radius: 7px;
   background: radial-gradient(#318aff, #470099);
-  -webkit-box-shadow: 0 0 8px 4px #318aff88;
-          box-shadow: 0 0 8px 4px #318aff88;
+  -webkit-box-shadow: 0 0 6px 2px #318aff88;
+          box-shadow: 0 0 6px 2px #318aff88;
   -webkit-transition: -webkit-box-shadow 0.1s;
   transition: -webkit-box-shadow 0.1s;
   transition: box-shadow 0.1s;
@@ -76,6 +76,7 @@
 
 #drum-machine {
   padding: 40px 8px;
+  background: linear-gradient(170deg, #262626 30%, #1a1a1a);
   background-color: #262626;
 }
 /*# sourceMappingURL=App.css.map */

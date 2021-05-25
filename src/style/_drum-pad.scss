@@ -9,7 +9,7 @@
     border: 1px solid grey;
     border-radius: 7px;
     background: radial-gradient(#318aff, #470099);
-    box-shadow: 0 0 8px 4px #318aff88;
+    box-shadow: 0 0 6px 2px #318aff88;
     // on mouse click (&:active) and JS programmed (toggles 'press' class) click:
     &:active,
     &.press {
