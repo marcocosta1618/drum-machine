@@ -1,5 +1,6 @@
-@import 'drum-pad';
+@import 'drumPad';
 @import 'display';
+@import 'powerButton';
 
 * {
   box-sizing: border-box;
@@ -13,6 +14,7 @@
 }
 
 #drum-machine {
+  font-family: 'Audiowide', sans-serif;
   padding: 40px 8px;
   background: linear-gradient(170deg, #262626 30%, #1a1a1a);
   background-color: #262626;

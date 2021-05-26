@@ -1,0 +1,21 @@
+.powerSwitch-div {
+    input[type="button"] {
+        width: 30px;
+        height: 30px;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid #333;
+        border-radius: 15px;
+        background: radial-gradient(#c7dfff 20%, #7805fb);
+        box-shadow: 0 0 20px 4px #ac69f8;
+        &.off {
+            background: radial-gradient(at 35% 30%, #afd2ff, #160629 18%);
+            box-shadow: none;
+        }
+    }
+    label {
+        font-size: 1.4em;
+        color: #f3f3f3;
+        cursor: pointer;
+    }
+}

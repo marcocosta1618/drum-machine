@@ -21,8 +21,9 @@ export default function DrumMachine() {
     }
 
     const [ power, setPower ] = useState(true);
-    const powerSwitch = function() {
+    const powerSwitch = function(e) {
         setPower(!power);
+        e.target.classList.toggle('off');
     }
 
     return (

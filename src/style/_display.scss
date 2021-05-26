@@ -16,14 +16,17 @@ $bor-dark: 2px solid #2a2a2a;
     background-color: #000;
     p {
         // display: block;
-        flex: 0.4;
+        flex: 0.3;
         font-family: 'Audiowide', monospace;
         font-size: 1rem;
         color: #f3f3f3;
         text-shadow: -10px -10px 40px #f3f3f3, 10px 10px 40px #f3f3f3;
         + p {
-            flex: 0.6;
+            flex: 0.5;
             text-align: left;
+            + p {
+                flex: 0.2;
+            }
         }
     }
 }
