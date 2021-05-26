@@ -12,7 +12,7 @@ export default function DrumMachine() {
     }, []); // empty dependencies array => run useEffect only after first render
 
 
-    const handleKeydown = (e) => {
+    const handleKeydown = function(e) {
         let clicked = soundBank.find((soundData) => {
             return soundData.padLabel === e.key.toUpperCase();
           });

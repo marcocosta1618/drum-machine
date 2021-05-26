@@ -6,17 +6,17 @@ import soundBank from '../soundData/soundBank';
 
 
 // PadBank creates a DrumPad for each object in soundBank array
-function PadBank(props) {
+function PadBank() {
 
     const [ soundLabel, setSoundLabel ] = useState("");
-    const updateDisplay = (e) => {
+    const updateDisplay = function(e) {
         setSoundLabel(e);
     }
 
     return (
         <div id="padBank">
             <Display soundLabel={soundLabel} />
-
+            {/* return a DrumPad component for each object in soundBank */}
             {soundBank.map((soundData) => {
                 return (
                     <DrumPad
