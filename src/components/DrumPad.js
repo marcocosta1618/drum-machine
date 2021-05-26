@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-//import soundBank from '../soundData/soundBank';
+import { useRef } from 'react';
 
 export default function DrumPad(props) {
 
@@ -12,6 +11,8 @@ export default function DrumPad(props) {
         // play sound and prevent Uncaught(in promise) DOMException when running
         // FCC test suite in Chrome:
         const sound = audioEl.current;
+        // <audio /> volume range is 0. - 1.
+        sound.volume = props.volume * 0.01;
         sound.currentTime = 0;
         let playPromise = sound.play();
         if (playPromise !== undefined) {

@@ -1,47 +1,47 @@
 const soundBank = [
     {
         padLabel: "Q",
-        id: "Chord 1",
+        id: "chord 1",
         url: "/sound/Chord 1.wav"
     },
     {
         padLabel: "W",
-        id: "Chord 2",
+        id: "chord 2",
         url: "/sound/Chord 2.wav"
     },
     {
         padLabel: "E",
-        id: "Chord 3",
+        id: "chord 3",
         url: "/sound/Chord 3.wav"
     },
     {
         padLabel: "A",
-        id: "Closed HH 909",
+        id: "closed HH 909",
         url: "/sound/Closed HH 909.wav"
     },
     {
         padLabel: "S",
-        id: "OpenHH 909",
+        id: "open HH 909",
         url: "/sound/OpenHH 909.wav"
     },
     {
         padLabel: "D",
-        id: "Rimshot",
+        id: "rimshot",
         url: "/sound/Rimshot.wav"
     },
     {
         padLabel: "Z",
-        id: "Kick 909",
+        id: "kick 909",
         url: "/sound/Kick 909.wav"
     },
     {
         padLabel: "X",
-        id: "Snare 909_1",
+        id: "snare 909-1",
         url: "/sound/Snare 909_1.wav"
     },
     {
         padLabel: "C",
-        id: "Snare 909_2",
+        id: "snare 909-2",
         url: "/sound/Snare 909_2.wav"
     }
 ]

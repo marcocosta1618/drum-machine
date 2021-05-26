@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 
 export default function Display(props) {
 
@@ -6,6 +6,7 @@ export default function Display(props) {
         <div id="display">
             <p>kit: 909</p>
             <p>sample: {props.soundLabel}</p>
+            {/* <p>{props.volume}</p> */}
         </div>
     )
 }

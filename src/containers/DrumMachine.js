@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 import PadBank from '../components/PadBank';
 import soundBank from '../soundData/soundBank';
