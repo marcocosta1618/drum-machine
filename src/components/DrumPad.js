@@ -8,8 +8,8 @@ export default function DrumPad(props) {
     const buttonEl = useRef(null);
 
     const handleClick = function(e) {
-        // play sound and prevent Uncaught(in promise) DOMException when running
-        // FCC test suite in Chrome:
+        // play sound (and prevent promise errors when running
+        // FCC test suite in Chrome):
         const sound = audioEl.current;
         // <audio /> volume range is 0. - 1.
         sound.volume = props.volume * 0.01;
@@ -21,18 +21,27 @@ export default function DrumPad(props) {
                     console.log(error);
                 })
         }
-        // update display
+        // update display and flashes pads
         props.updateDisplay(e.target.id);
-        // lightning button on keypresses
+        // lightning button on keypresses by rapidly toggling CSS classes
         const button = buttonEl.current;
         button.classList.toggle('press');
         setTimeout(() => button.classList.toggle('press'), 75);
     }
 
     return (
-        <button id={props.id} className="drum-pad" ref={buttonEl} onClick={handleClick} >
+        <button id={props.id} 
+                className="drum-pad" 
+                ref={buttonEl} 
+                onClick={handleClick} 
+                disabled={!props.power} 
+                autoComplete="off" >
             {props.padLabel}
-            <audio id={props.padLabel} className="clip" ref={audioEl} src={props.url}></audio>
+            <audio id={props.padLabel} 
+                   className="clip" 
+                   ref={audioEl} 
+                   src={props.url}>
+            </audio>
         </button>
     )
 }

@@ -1,12 +1,13 @@
-//import React from 'react';
-
 export default function Display(props) {
 
-    return(
+    return props.power ? (
         <div id="display">
             <p>kit: 909</p>
             <p>sample: {props.soundLabel}</p>
-            {/* <p>{props.volume}</p> */}
+            <p>vol: {props.volume}</p>
+        </div>
+    ) : (
+        <div id="display">
         </div>
     )
 }

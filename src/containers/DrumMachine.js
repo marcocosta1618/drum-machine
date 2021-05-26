@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import PadBank from '../components/PadBank';
+import PowerButton from '../components/PowerButton';
 import soundBank from '../soundData/soundBank';
 
 export default function DrumMachine() {
@@ -19,9 +20,15 @@ export default function DrumMachine() {
         clicked !== undefined && document.getElementById(clicked.id).click();
     }
 
+    const [ power, setPower ] = useState(true);
+    const powerSwitch = function() {
+        setPower(!power);
+    }
+
     return (
         <div id="drum-machine" tabIndex="-1" >
-            <PadBank  />
+            <PadBank  power={power}/>
+            <PowerButton power={power} powerSwitch={powerSwitch} />
         </div>
     );
 }
