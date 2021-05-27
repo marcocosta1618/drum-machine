@@ -9,7 +9,7 @@ export default function Display(props) {
     ) : (
         <div id="display">
             <p></p>
-            <p style={{fontSize: "1.2em", textAlign: "center", flex: "0.4"}}>see you! : &#41;</p>
+            <p className="off">see you! : &#41;</p>
             <p></p>
         </div>
     )
