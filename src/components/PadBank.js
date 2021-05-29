@@ -26,6 +26,7 @@ function PadBank(props) {
                      power={props.power}
             />
             {/* return a DrumPad component for each object in soundBank */}
+            <div id="pad-div">
             {soundBank.map((soundData) => {
                 return (
                     <DrumPad
@@ -39,6 +40,7 @@ function PadBank(props) {
                     />
                 )
             })}
+            </div>
             <Volume volume={volume} 
                     handleChange={handleChange} 
                     power={props.power}

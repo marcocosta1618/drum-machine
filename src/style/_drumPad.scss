@@ -1,22 +1,35 @@
-.drum-pad {
-    font-family: inherit;
-    font-size: 4rem;
-    color: #333;
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-    outline: none;
-    cursor: pointer;
-    border: 1px solid grey;
-    border-radius: 7px;
-    background: radial-gradient(#318aff, #470099);
-    box-shadow: 0 0 6px 2px #318aff88;
-    // on mouse click (&:active) and JS programmed (toggles 'press' class) click:
-    &:active,
-    &.press {
-        color: #bbb;
-        background: radial-gradient(#86bbfe, #7805fb);
-        box-shadow: 0 0 40px 4px #7805fb;
+#pad-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    .drum-pad {
+        flex: 0 30%;
+        min-height: 90px;
+        margin-bottom: 5%;
+        font-family: inherit;
+        font-size: 3em;
+        color: #333;
+        outline: none;
+        cursor: pointer;
+        border: 1px solid grey;
+        border-radius: 7px;
+        background: radial-gradient(#318aff, #470099);
+        box-shadow: 0 0 8px 4px #318aff88;
+        transition: box-shadow 0.1s;
+        // on mouse click (&:active) and JS programmed (toggles 'press' class) click:
+        &:active,
+        &.press {
+            color: #bbb;
+            background: radial-gradient(#86bbfe, #7805fb);
+            box-shadow: 0 0 40px 4px #7805fb;
+        }
+        &.off {
+            border: 1px solid #333;
+            box-shadow: none;
+            background: #16062942;
+            transition: box-shadow 3s;
+        }
     }
-    transition: box-shadow 0.1s;
 }

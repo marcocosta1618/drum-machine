@@ -28,6 +28,7 @@ export default function DrumMachine() {
 
     return (
         <div id="drum-machine" tabIndex="-1" >
+            <h1>Drum Machine</h1>
             <PadBank  power={power}/>
             <PowerButton power={power} powerSwitch={powerSwitch} />
         </div>

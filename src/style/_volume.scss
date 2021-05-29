@@ -1,12 +1,31 @@
-svg.on {
+#volume-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2em auto 0;
+}
+p {
+    font-size: 1em;
+    width: 80%;
+    margin: 0.5em auto 1em;
     color: #f3f3f3;
 }
-svg.off {
-    color: #666;
+svg {
+    margin: 0.1em 1em;
+    &.on {
+        color: #f3f3f3;
+    }
+    &.off {
+        color: #666;
+    }
 }
-span.on {
-    color: #318aff;
-}
-span.off {
-    color: #666 !important;
+span {
+    &.on {
+        color: #318aff;
+        width: 70%;
+    }
+    &.off {
+        color: #666 !important;
+        width: 70%;
+    }
 }

@@ -31,7 +31,7 @@ export default function DrumPad(props) {
 
     return (
         <button id={props.id} 
-                className="drum-pad" 
+                className={props.power ? "drum-pad" : "drum-pad off"} 
                 ref={buttonEl} 
                 onClick={handleClick} 
                 disabled={!props.power} 

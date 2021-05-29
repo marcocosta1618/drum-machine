@@ -1,7 +1,7 @@
 export default function PowerButton(props) {
     
     return (
-        <div className="powerSwitch-div">
+        <div className="powerBtn-div">
             <input type="button" 
                    id="power"
                    onClick={props.powerSwitch} >
