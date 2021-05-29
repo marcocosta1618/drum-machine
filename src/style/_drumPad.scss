@@ -1,22 +1,30 @@
 #pad-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 600px;
+    // container for the drum-pads
+    display: grid;
+    grid-template-columns: minmax(1px, 1fr) minmax(1px, 1fr) minmax(1px, 1fr);
+    grid-template-rows: minmax(1px, 1fr) minmax(1px, 1fr) minmax(1px, 1fr);
+    grid-auto-flow: row;
+    gap: 2.5% 2.5%;
+    max-width: 500px;
+    min-height: 300px;
     margin: auto;
+    // single drum-pad
     .drum-pad {
-        flex: 0 30%;
-        min-height: 90px;
-        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 80px;
         font-family: inherit;
-        font-size: 3em;
+        font-size: 2.6em;
+        text-align: center;
         color: #333;
         outline: none;
         cursor: pointer;
         border: 1px solid grey;
         border-radius: 7px;
         background: radial-gradient(#318aff, #470099);
-        box-shadow: 0 0 8px 4px #318aff88;
+        box-shadow: 0 0 6px 1px #318aff88;
         transition: box-shadow 0.1s;
         // on mouse click (&:active) and JS programmed (toggles 'press' class) click:
         &:active,
@@ -29,7 +37,7 @@
             border: 1px solid #333;
             box-shadow: none;
             background: #16062942;
-            transition: box-shadow 3s;
+            transition: box-shadow 2s;
         }
     }
 }
