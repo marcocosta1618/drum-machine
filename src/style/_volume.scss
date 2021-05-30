@@ -2,17 +2,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: min(100%, 640px);
     margin: 3em auto 0;
 }
 p {
     font-size: 1em;
     width: 80%;
-    margin: 0.5em auto 1em;
+    margin: 0.2em auto 1em;
     color: #f3f3f3;
 }
 svg {
-    margin: 0.1em 1em;
+    margin: 0.1em 0.25em;
     &.on {
         color: #f3f3f3;
     }

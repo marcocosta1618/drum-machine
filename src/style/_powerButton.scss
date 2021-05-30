@@ -1,5 +1,5 @@
 .powerBtn-div {
-    width: 90%;
+    width: min(100%, 510px);
     margin: 0 auto;
     display: flex;
     input[type="button"] {

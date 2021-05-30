@@ -16,7 +16,7 @@ export default function Volume(props) {
                 />
                 <VolumeUpIcon className={props.power ? "on" : "off"} />
             </div>
-            <p>volume</p>
+            <p>vol</p>
         </>
     )
 }
