@@ -10,3 +10,5 @@ This app is [hosted on GitHub Pages](https://marcocosta1618.github.io/drum-machi
 ![SASS](https://img.shields.io/badge/SASS-cc6699.svg?&logo=sass&logoColor=white)&nbsp;
 
 ---
+
+![screenshot(60%)](https://user-images.githubusercontent.com/78434326/120496347-c669f480-c3bd-11eb-8153-99e74bfd9b86.jpg)
