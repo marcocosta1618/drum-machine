@@ -1,7 +1,11 @@
 #drum-machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
   font-family: "Audiowide", sans-serif;
-  padding: 8px 16px 40px;
+  padding: 8px 16px 0;
+  margin-bottom: 0;
   background: linear-gradient(170deg, #262626 30%, #1a1a1a);
   background-color: #262626;
 }

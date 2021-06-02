@@ -1,7 +1,11 @@
 #drum-machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
   font-family: "Audiowide", sans-serif;
-  padding: 8px 16px 40px;
+  padding: 8px 16px 0;
+  margin-bottom: 0;
   background: linear-gradient(170deg, #262626 30%, #1a1a1a);
   background-color: #262626;
 }
@@ -142,7 +146,7 @@ span.off {
 
 .powerBtn-div {
   width: min(100%, 510px);
-  margin: 0 auto;
+  margin: 0 auto 16px;
   display: flex;
 }
 .powerBtn-div input[type=button] {
@@ -165,6 +169,22 @@ span.off {
   margin-left: 0.5em;
   color: #f3f3f3;
   cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0;
+  border-top: 1px solid #333;
+}
+footer p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.9em;
+  width: 100%;
+  margin: 8px auto;
+}
+footer p a {
+  color: #318aff;
 }
 
 * {

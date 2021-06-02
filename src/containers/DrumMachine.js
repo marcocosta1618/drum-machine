@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 import PadBank from '../components/PadBank';
 import PowerButton from '../components/PowerButton';
+import Footer from '../components/Footer';
 import soundBank from '../soundData/soundBank';
 
 export default function DrumMachine() {
@@ -31,6 +32,7 @@ export default function DrumMachine() {
             <h1>Drum Machine</h1>
             <PadBank  power={power}/>
             <PowerButton power={power} powerSwitch={powerSwitch} />
+            <Footer />
         </div>
     );
 }
