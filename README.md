@@ -11,5 +11,4 @@ This app is [hosted on GitHub Pages](https://marcocosta1618.github.io/drum-machi
 
 ---
 
-![screenshot(60%)](https://user-images.githubusercontent.com/78434326/120496731-18127f00-c3be-11eb-8b92-cf21fcd2ae3e.jpg)
-
+![screenshot](https://user-images.githubusercontent.com/78434326/120625739-46e23100-c462-11eb-9693-4f8e43c50106.jpg)
